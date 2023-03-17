@@ -5,11 +5,10 @@ const App = () => {
     const [todo, setTodo] = React.useState("");
     const [todoEditing, setTodoEditing] = React.useState(null);
     const [editingText, setEditingText] = React.useState("");
-
     function handleSubmit(e) {
         e.preventDefault();
         const newTodo = {
-            id: new ,
+            id: new Date().getTime(),
             text: todo.trim(),
             completed: false,
         };

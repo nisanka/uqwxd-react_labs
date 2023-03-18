@@ -131,3 +131,7 @@ dmypy.json
 /todo_list/node_modules
 /todo_list/yarn.lock
 /todo_list/package-lock.json
+/react-redux-master/node_modules
+/react-redux-master/.vs/react-redux-master/v16/TestStore/0
+/react-redux-master/.vs/react-redux-master/v16/.suo
+/react-redux-master/.vs/slnx.sqlite

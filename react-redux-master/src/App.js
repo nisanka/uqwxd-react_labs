@@ -2,10 +2,10 @@ import React from 'react';
 import MainPanel from './components/MainPanel';
 
 function App() {
-  return (
-      <div>
-        <MainPanel/>
-      </div>
+    return (
+        <div>
+            <MainPanel />
+        </div>
     );
 }
 

@@ -23,7 +23,7 @@ const App = () => {
         }
     }, [todos]);
 
-    function handleSubmit(e) {
+    const handleSubmit = (e) => {
         e.preventDefault();
 
         const newTodo = {
@@ -41,12 +41,13 @@ const App = () => {
             setTodo("");
         }
     }
-    function deleteTodo(id) {
+
+    const deleteTodo = (id) => {
         let updatedTodos = [...todos].filter((todo) => todo.id !== id);
         setTodos(updatedTodos);
     }
 
-    function toggleComplete(id) {
+    const toggleComplete = (id) => {
         let updatedTodos = [...todos].map((todo) => {
             if (todo.id === id) {
                 todo.completed = !todo.completed;
@@ -56,7 +57,7 @@ const App = () => {
         setTodos(updatedTodos);
     }
 
-    function submitEdits(id) {
+    const submitEdits = (id) => {
         const updatedTodos = [...todos].map((todo) => {
             if (todo.id === id) {
                 todo.text = editingText;
